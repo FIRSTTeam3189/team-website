@@ -9,16 +9,23 @@
 title: FRC - 3189
 
 # Your name to show in the footer
-author: James Womack
+author: Team 3189
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Us: "aboutus"
-  Resources:
-    - Team Website: "https://3189.team"
-    - Poems: "https://poem.3189.team/"
+  Departments:
+    - Programming: "departments/programming"
+    - Poems: "http://poem.3189.team/"
   Author's home: "https://3189.team"
+
+# --- List of collections for the Team Website --- #
+
+collections_dir: sections
+collections:
+  - programming
+  - mechanical
 
 # --- Logo --- #
 
@@ -98,8 +105,8 @@ feed_show_tags: true
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
-page-col: "#3F3F3F"
-text-col: "#EFEFEF"
+page-col: "#FAFAFA"
+text-col: "#0A0A0A"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#4A4A4A"
