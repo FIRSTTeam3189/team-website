@@ -5,7 +5,7 @@ subtitle: What needs to get done on the website to make it usable for the team w
 tags: [website, team, pr, media]
 ---
 
-# Overview of Features
+# Overview of Features (Thingy)
 
 Site Features we'll need for the *real* team website:
 
