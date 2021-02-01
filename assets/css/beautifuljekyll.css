@@ -122,7 +122,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: {{ site.navbar-col | default: "#EAEAEA" }};
+  background-color: #444;
   border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
@@ -139,6 +139,10 @@ img {
 .navbar-custom.top-nav-short-permanent {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+a .navbar-custom {
+color: #cccccc;
 }
 
 .navbar-custom .navbar-brand {
@@ -374,6 +378,7 @@ footer {
   margin-top: 3.125rem;
   font-size: 0.875rem;
   background-color: {{ site.footer-col | default: "#EAEAEA" }};
+
   {% if site.footer-img %}
     background-image: url({{ site.footer-img | relative_url }});
     background-attachment: fixed;
@@ -788,7 +793,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   padding: 0.625rem 0.3125rem;
   background-color: #FFF;
   border-radius: 0;
-  color: {{ site.text-col | default: "#404040" }};
+  color: #444;
 }
 @media (min-width: 768px) {
   .pagination .page-item .page-link {
@@ -797,7 +802,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 }
 .pagination .page-item .page-link:hover,
 .pagination .page-item .page-link:focus {
-  color: #FFF;
+  color: #444;
   border: 1px solid {{ site.hover-col | default: "#0085A1" }};
   background-color: {{ site.hover-col | default: "#0085A1" }};
 }
@@ -806,6 +811,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 
 table {
   padding: 0;
+  color: #444;
 }
 table tr {
   border-top: 1px solid #cccccc;
@@ -843,13 +849,13 @@ table tr td :last-child {
 code {
   padding: 0.125rem 0.25rem;
   color: #c7254e;
-  background-color: #f9f2f4;
+  background: rgba(214, 216, 214, 1); /* Green background with 30% opacity */
   border-radius: 0.25rem;
 }
 
 pre code {
   padding: 0;
-  background-color: transparent;
+  background-color: transparent; 
   border-radius: 0;
 }
 
@@ -863,6 +869,9 @@ pre {
   border: none;
   background: none;
   margin: 0;
+  background: rgba(214, 216, 214, 1); /* Green background with 30% opacity */
+
+  
 }
 .highlight > pre {
   background-image: linear-gradient(
